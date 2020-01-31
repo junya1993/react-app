@@ -7,13 +7,10 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
 import firebase from 'firebase';
 import firebaseConfig from './config/firebase';
 
 firebase.initializeApp(firebaseConfig);
-
-
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -43,9 +40,6 @@ const useStyles = makeStyles(theme => ({
     color: '#388e3c',
   }
 }));
-
-
-
 
 export default function SignIn() {
   const classes = useStyles();
@@ -79,7 +73,6 @@ export default function SignIn() {
             autoComplete="current-password"
           />
 
-          
           <Grid container justify="space-around">
               <Grid item xs={4}>
                 <Button
